@@ -21,4 +21,10 @@ mkdir mikedevops
 git init
 Видем (mc), что пояилась скрытый каталог /.git
 Создадим несколько файлов 
+root@homework6git:/home/mikekey/mikedevops# echo "first test file" > first.test
+root@homework6git:/home/mikekey/mikedevops# echo "second test file" > second.test
+root@homework6git:/home/mikekey/mikedevops# echo "therd test file" > therd.test
+Проверяем git status
+Добавляем git add *
+Коммитрим git commit или можно так: git commit -m "My files"
 
