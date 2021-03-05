@@ -37,8 +37,7 @@ git push
 
 
 ```
-##
-Создание веток и работа с ними
+## Создание веток и работа с ними
 ```
 git branch newbranch1
 git branch newbranch2
