@@ -133,8 +133,27 @@ root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all
 | |
 | |     add new branck and new description
 ```
-  170  git reset --hard HEAD~1
-  171  git log -n 2 --graph --all
+
+## Отменить предыдущий комит
+```
+git reset --hard HEAD~1
+git log -n 2 --graph --all
+root@homework6git:/home/mikekey/mikedevops/Homework6# git reset --hard HEAD~1
+HEAD is now at 768a64a new branch2 and new description
+root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all
+*   commit c6fe5d69a4a4f143b10a53463dec998e65a2e683 (newbranch2)
+|\  Merge: 768a64a 930cb7a
+| | Author: mixxod <mixxod@mail.com>
+| | Date:   Fri Mar 5 09:18:41 2021 +0000
+| |
+| |     merge newbranch1 >newbranch2
+| |
+| * commit 930cb7abb3fa9fde78125b699f338a9167bf5902 (newbranch1)
+| | Author: mixxod <mixxod@mail.com>
+| | Date:   Fri Mar 5 09:00:09 2021 +0000
+| |
+| |     add new branck and new description
+```
   172  git push
   173  git status
   174  git branch
