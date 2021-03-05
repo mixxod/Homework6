@@ -156,34 +156,10 @@ root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all
 | |
 | |     add new branck and new description
 ```
-  172  git push
-  173  git status
-  174  git branch
-  175  git add *
-  176  git commit
-  177  git checkout newbranch1
-  178  git add *
-  179  git commit
-  180  ls
-  181  git status
-  182  git push --set-upstream original main
-  183  git push --set-upstream origin main
-  184  git status
-  185  git chechout main
-  186  git check\out main
-  187  git status
-  188  git branch
-  189  git branch -d develop
-  190  git branch
-  191  git add *
-  192  git commit
-  193  git push
-  194  git branch
-  195  git branch -r
-  196  git branch --help
-  197  git push -u origin newbrach1
-  198  git push -u origin newbranch1
-  199  git push -u origin newbranch2
-  200  git branch
-  201  git push origin --delete develop
+## Все изменения запушить в гит репозиторий.
+git branch (локальный репозиторий)
+git branch -r (удаленный репозиторий)
+
+git push -u origin newbrach1 --- загрузка с локального репозитория на удаленный
+git push origin --delete develop --- удаление 
 
