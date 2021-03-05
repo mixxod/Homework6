@@ -120,7 +120,8 @@ Fast-forward (no commit created; -m option ignored)
  2 files changed, 2 insertions(+)
  create mode 100644 fileferst.txt
  create mode 100644 filesecond.txt
-root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all                                              *   commit c6fe5d69a4a4f143b10a53463dec998e65a2e683 (HEAD -> main, newbranch2)
+root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all                                             
+ *   commit c6fe5d69a4a4f143b10a53463dec998e65a2e683 (HEAD -> main, newbranch2)
 |\  Merge: 768a64a 930cb7a
 | | Author: mixxod <mixxod@mail.com>
 | | Date:   Fri Mar 5 09:18:41 2021 +0000
@@ -132,6 +133,7 @@ root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all
 | | Date:   Fri Mar 5 09:00:09 2021 +0000
 | |
 | |     add new branck and new description
+
 ```
 
 ## Отменить предыдущий комит
