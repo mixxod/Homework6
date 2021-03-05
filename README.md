@@ -49,6 +49,7 @@ git branch
   newbr2
 ```
 ##
+```
 Bнести изменения в ветку 1 и 2
 Переключимся на ветку
 git chechout newbranch1
