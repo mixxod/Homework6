@@ -13,7 +13,7 @@ Homework6_GIT
 
 =======================================================
 ##
-````
+```
 Практическая часть:
 1.Необходимо представиться ГИТу(делается один раз):
 git config --global user.name "mixxod"
@@ -30,4 +30,13 @@ root@homework6git:/home/mikekey/mikedevops# echo "therd test file" > therd.test
 Проверяем git status
 Добавляем git add *
 Коммитрим git commit или можно так: git commit -m "My files"
+Делаем клон подготовленного репозитория c github
+git clone https://github.com/mixxod/Homework6.git
+переносим созданные файлы в каталог склонированного репозитория
+git push
+
+
 ```
+##
+Создание веток и работа с ними
+
