@@ -48,7 +48,7 @@ git branch
   newbr1
   newbr2
 ```
-##
+## Bнести изменения в ветку 1 и 2
 ```
 Bнести изменения в ветку 1 и 2
 Переключимся на ветку
@@ -80,9 +80,24 @@ root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all
 |       add new branck and new description
 ```
 
+## Смержить две созданные ветки
+```
+git merge newbranch1 -m "merge newbranch1 >newbranch2"
+git log -n 2 --graph --all
+root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all                                              *   commit c6fe5d69a4a4f143b10a53463dec998e65a2e683 (HEAD -> newbranch2)
+|\  Merge: 768a64a 930cb7a
+| | Author: mixxod <mixxod@mail.com>
+| | Date:   Fri Mar 5 09:18:41 2021 +0000
+| |
+| |     merge newbranch1 >newbranch2
+| |
+| * commit 930cb7abb3fa9fde78125b699f338a9167bf5902 (newbranch1)
+| | Author: mixxod <mixxod@mail.com>
+| | Date:   Fri Mar 5 09:00:09 2021 +0000
+| |
+| |     add new branck and new description
+```
 
-  164  git merge newbranch1 -m "merge newbranch1 >newbranch2"
-  165  git log -n 2 --graph --all
   166  git checkout main
   167  git branch
   168  git merge newbranch2 -m "merge newbranch2 >main"
