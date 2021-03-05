@@ -157,9 +157,11 @@ root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all
 | |     add new branck and new description
 ```
 ## Все изменения запушить в гит репозиторий.
+```
 git branch (локальный репозиторий)
 git branch -r (удаленный репозиторий)
 
 git push -u origin newbrach1 --- загрузка с локального репозитория на удаленный
 git push origin --delete develop --- удаление 
+```
 
