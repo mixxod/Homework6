@@ -97,10 +97,42 @@ root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all
 | |     add new branck and new description
 ```
 
-  166  git checkout main
-  167  git branch
-  168  git merge newbranch2 -m "merge newbranch2 >main"
-  169  git log -n 2 --graph --all
+## Смерджить ветку с веткой мастер
+```
+git checkout main
+git branch
+git merge newbranch2 -m "merge newbranch2 >main"
+git log -n 2 --graph --all
+root@homework6git:/home/mikekey/mikedevops/Homework6# git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+root@homework6git:/home/mikekey/mikedevops/Homework6# git branch
+  develop
+* main
+  newbranch1
+  newbranch2
+root@homework6git:/home/mikekey/mikedevops/Homework6# git merge newbranch2 -m "merge newbranch                                2 >main"
+Updating 1b86dbb..c6fe5d6
+Fast-forward (no commit created; -m option ignored)
+ fileferst.txt  | 1 +
+ filesecond.txt | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 fileferst.txt
+ create mode 100644 filesecond.txt
+root@homework6git:/home/mikekey/mikedevops/Homework6# git log -n 2 --graph --all                                              *   commit c6fe5d69a4a4f143b10a53463dec998e65a2e683 (HEAD -> main, newbranch2)
+|\  Merge: 768a64a 930cb7a
+| | Author: mixxod <mixxod@mail.com>
+| | Date:   Fri Mar 5 09:18:41 2021 +0000
+| |
+| |     merge newbranch1 >newbranch2
+| |
+| * commit 930cb7abb3fa9fde78125b699f338a9167bf5902 (newbranch1)
+| | Author: mixxod <mixxod@mail.com>
+| | Date:   Fri Mar 5 09:00:09 2021 +0000
+| |
+| |     add new branck and new description
+```
   170  git reset --hard HEAD~1
   171  git log -n 2 --graph --all
   172  git push
